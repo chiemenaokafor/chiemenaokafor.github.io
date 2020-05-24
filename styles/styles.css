@@ -1,0 +1,296 @@
+body{
+    background-color: #393e46;
+    margin: 0;
+    text-align: center;
+    font-family: 'merriweather', sans-serif;
+    color: white;
+}
+
+span{
+    text-decoration: underline;
+}
+
+h1{
+    font-family: 'Sacramento', cursive;
+    font-size: 5.625rem;
+    margin: 50px auto 0 auto;
+    color: #66BFBF;
+    font-weight: 900 !important;
+}
+
+h2, h3, h4, h5, h6{
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.5;
+    font-weight: 900;
+    color: #66BFBF;
+}
+
+hr{
+    width: 10%;
+    border: 8px dotted #EAF6F6;
+    border-bottom: none;
+    margin: 100px auto;
+    
+}
+
+
+
+
+/* Navigation */
+.navbar-brand{
+    letter-spacing: 5px;
+    color: #303960 !important;
+}
+.fixed-top{
+    padding: 0 15%;
+}
+.navbar-light .navbar-nav .nav-link{
+    color: #66BFBF;
+    margin: 0 20px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover{
+    color: white;
+    font-size: 20px;
+    background-color: #66BFBF;
+    transition: 0.5s;
+    
+}
+
+.navbar.scrolled{
+    background: #e4e4e4;
+    transition-duration: 1s;
+}
+
+/* Header */
+
+.jumbotron{
+    /* offset-x | offset-y | blur-radius | color */
+    box-shadow: 5px 5px 20px black;
+    text-align: center;
+    background-color: white;
+    border-radius: 0rem;
+    color: black;
+    padding: 5% 0 0 10%;
+}
+
+
+/* Profile */
+
+.profilepicture{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    margin: 20px;
+}
+
+#profile{
+    padding: 0 20%;
+}
+
+
+/* My Skills */
+
+#skills{
+    background-color: #303960;
+    padding: 2rem 0;
+    border-radius: 10px;
+}
+
+.myskills{
+    padding: 5% 10% 0;
+
+}
+
+.imgone{
+    transform: rotate(30deg);
+    width: 60%;
+    position: absolute;
+    left: 30%;
+    bottom: 70%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px black;
+}
+
+.imgtwo{
+    width: 60%;
+    position: relative;
+    top: 30%;
+    border-radius: 10px;
+    margin: 10px 0;
+    box-shadow: 5px 5px 20px black;
+}
+
+.imgthree{
+    transform: rotate(330deg);
+    width: 60%;
+    position: absolute;
+    top: 60%;
+    right: 10%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px black;
+}
+
+.skillsicons{
+    width: 30%;
+    height: 30%;
+    margin: 20px;
+}
+
+.bottom-skills{
+    padding: 5% 6%;
+}
+
+
+/* WORK EXPERIENCE */
+.card-text{
+    color: black;
+    text-align: left;
+}
+
+#work-experience{
+    padding: 5% 20%;
+}
+
+/* FOOTER */
+#footer{
+    color: #8f8f8f;
+    background-color: #fff;
+}
+.footer-icon{
+    color: black;
+}
+
+.bottom-container{
+    background-color: white;
+    padding: 1% 20%;
+    justify-content: space-around;
+}
+
+.footer-link{
+    margin: 10%;
+    color: #66BFBF;
+}
+.footer-link:hover{
+    text-decoration: none;
+    color: #162447;
+    
+}
+
+
+/* The Pig Game */
+/* GAME */
+.game{
+    padding: 5% 5%;
+}
+.game h4{
+    text-align: left;
+    padding-left: 16%;
+}
+ul{
+    text-align: left;
+    line-height: 2rem;
+}
+
+.interface{
+    background-color: white;
+    padding-left: 0;
+    padding-bottom: 0;
+    font-family: Lato;
+    font-weight: 300;
+    position: relative;
+    color: #555;
+    width: 1000px;
+}
+
+.active { background-color: #adadad; }
+.active .player-name { font-weight: 300; }
+
+.player-current-box {
+    position: relative;
+    top: 25%;
+    background-color: #EB4D4D;
+    color: #fff;
+    width: 40%;
+    margin: 0 auto;
+    padding: 12px;
+    text-align: center;
+}
+
+.player-current-label {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: #222;
+}
+
+.player-current-score {
+    font-size: 30px;
+}
+
+.game-button {
+    position: relative;
+    right: 25%;
+    width: 40%;
+    text-align: center;
+    color: #555;
+    background: none;
+    border: none;
+    font-family: Lato;
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 300;
+}
+
+.game-button:hover { font-weight: 600; }
+.game-button:hover i { margin-right: 10px; }
+
+.game-button:focus {outline: none;}
+
+.btn-new {top: 80px;}
+.btn-roll {top: 310px;}
+.btn-hold {top: 340px;}
+
+.dice {
+    position: relative;
+    right: 7%;
+    top: 10%;
+    height: 100px;
+    box-shadow: 0px 10px 60px rgba(36, 35, 35, 0.1);
+}
+
+.player-0-panel{
+    position: relative;
+    width: 50%;
+    float: left;
+    height: 500px;
+}
+.player-1-panel {
+    position: absolute;
+    left: 50%;
+    width: 50%;
+    height: 500px;
+}
+
+.player-name {
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 100;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.player-score {
+    text-align: center;
+    font-size: 80px;
+    font-weight: 100;
+    color: #EB4D4D;
+    margin-bottom: 0px;
+}
+
+.winner { background-color: #f7f7f7; }
+.winner .player-name { font-weight: 300; color: #EB4D4D; }
