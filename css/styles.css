@@ -1,0 +1,297 @@
+/* ---------------------------------------------------- */
+/* -------------------GENERAL SETTINGS----------------- */
+/* ---------------------------------------------------- */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    background-color: #f8f8f8;
+    color: #555;
+    font-family: Jost;
+    font-weight: 300px;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+.clearfix{zoom: 1;}
+.clearfix:after{
+    content: '-';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+
+/* ----------------------------------------------------- */
+/* -----------------------REUSEABLE--------------------- */
+/* ----------------------------------------------------- */
+
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.col {
+    width: 50%;
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+
+section{padding: 60px 0;}
+
+
+/* ----------------------HEADINGS----------------------- */
+/* ----------------------------------------------------- */
+
+h1, h2, h3{
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h1 {
+    color: white;
+    font-size: 240%;
+    word-spacing: 3px;
+}
+
+
+h2{
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+h2:after{
+    display: block;
+    height: 2px;
+    background-color: #eb3b5a;
+    content: " ";
+    width: 80px;
+    margin: 10px auto 0 auto;
+}
+
+h3{
+    font-size: 110%;
+    margin: 30px 0;
+}
+
+/* -----------------------HEADER------------------------ */
+header{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://wallpapercave.com/wp/wp1814640.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+header ul{
+    list-style: none;
+    float: right;
+    display: block;
+}
+
+header img{
+    width: 200px;
+    float: left;
+    margin: -40px;
+}
+
+header li{
+    display: inline-block;
+    margin: 40px 30px;
+}
+
+header li a:link,
+header li a:visited{
+    text-decoration: none;
+    color: #fff;
+}
+
+header li a:hover,
+header li a:active{
+    color: #fff;
+    border-bottom: 2px solid #eb3b5a;
+    transition: 0.2s;
+}
+
+.header-words{
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* ---------------------BUTTONS------------------------- */
+.btn:link,
+.btn:visited{
+    margin-top: 30px;
+    display: inline-block;
+    padding: 5px 15px;
+    font-weight: 300;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.btn:hover,
+.btn:active{
+    background-color: #eb3b5a;
+}
+
+.btn-full:link,
+.btn-full:visited{
+    background-color: #fc5c65;
+    border: 1px solid #fc5c65;
+    color: #fff;
+    margin-right: 15px;
+}
+
+.btn-full:hover,
+.btn-full:active{
+    background-color: #eb3b5a;
+    border: 1px solid #eb3b5a;
+    color: #fff;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 1px solid #fc5c65;
+    color: #fc5c65;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active{
+    background-color: #eb3b5a;
+    border: 1px solid #eb3b5a;
+    color: #fff;
+}
+
+/* ----------------------MY PROFILE----------------------- */
+.my-profile{
+    text-align: center;
+    margin: 0 25%;
+    background-color: #fff;
+    position: absolute;
+    top: 85%;
+    padding: 10px 50px;
+}
+
+/* ----------------------EXPERIENCE--------------------- */
+
+.experience{
+    display: flex;
+    justify-content: space-between;
+}
+
+.col-1-of-3{
+    padding: 15px 22px;
+    width: 350px;
+    float: left;
+    border: 1px solid black;
+    background-color: #fff;
+}
+
+.col-1-of-3 li{
+    list-style: square;
+    margin-bottom: 10px;
+}
+
+.experience{margin-top: 50px;}
+
+.date{
+    text-align: center;
+    font-size: 80%;
+    margin-top: 40px;
+    color: rgb(172, 172, 172);
+}
+
+/* ------------------------COMMENTS--------------------- */
+#comments{
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    text-align: center;
+    padding: 0;
+}
+.comments-img{
+    margin: 0;
+    padding: 0;
+}
+.comments-img img{width: 100%; }
+
+blockquote{
+    width: 70%;
+    text-align: left;
+    margin-left: 200px;
+    margin-bottom: 40px;
+}
+
+cite{
+    font-size: 80%;
+    margin-top: 20px;
+    display: block;
+}
+
+cite img{
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+
+/* ------------------------SKILLS----------------------- */
+#skills{
+    background-color: #fff;
+}
+.col-skills{
+    width: 80%;
+    padding: 0 20px;
+    line-height: 2;
+}
+
+.skills{
+    margin-left: 9%;
+    max-width: 1300px;
+    font-size: 80%;
+    display: flex;
+
+}
+
+.skills p{
+    margin-bottom: 20px;
+}
+
+/* -----------------------FOOTER------------------------ */
+
+#contact{
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(54, 54, 54);
+    color: #555;
+}
+
+#contact p{
+    margin-top: 20px;
+}
+
+#contact a:link,
+#contact a:visited{
+    text-decoration: none;
+    margin-left: 50px;
+    color: #555;
+}
+
+#contact a:hover,
+#contact a:active{
+    color: #eb3b5a;
+}
