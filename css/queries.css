@@ -3,7 +3,70 @@
 
 
 /* NORMAL PHONES: 481px to 767px */
-@media only screen and (max-width: 767px){}
+@media only screen and (max-width: 767px){
+    body{font-size: 16px;}
+
+    section{padding: 40px 0;}
+
+    header li{display: none;}
+
+    .header-words{
+        margin-left: 30%;
+        position: absolute;
+        top: 40%;
+        transform: translate(0, 0);
+    }
+
+    .header-words p{width: 45%;}
+
+    h1 {
+        line-height: 150%;
+        width: 45%;
+    }
+    
+    h2{font-size: 110%;}
+    
+    h3{font-size: 100%;
+        margin-bottom: 0;
+    }
+
+    .my-profile{
+        position: static;
+        border: 2px solid black;
+    }
+
+    .experience{
+        display: inline-table;
+        margin-left: 10%;
+}
+
+    .col-1-of-3{
+        margin-top: 20px;
+        width: 90%;
+        border: none;
+        padding: 5%;
+    }
+
+    .col{width: 100%;}
+
+    #comments{display: inline-table;}
+
+
+    .skills{
+        margin: 0%;
+        width: 100%;
+        font-size: 80%;
+        display: inline-table;
+    }
+    .col-skills{
+        text-align: center;
+        margin-bottom: 20px;
+        width: 100%;
+        padding: 0 10%;
+  
+    }
+}
+
 
 
 /* SMALL TABLETS: 768px to 1023px */
@@ -52,3 +115,6 @@
     blockquote{margin-left: 50px;}
     
 }
+
+
+
