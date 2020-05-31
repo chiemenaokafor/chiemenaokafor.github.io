@@ -3,22 +3,7 @@
 
 
 /* NORMAL PHONES: 481px to 767px */
-@media only screen and (max-width: 767px){
-    body{font-size: 16px;}
-    
-    header img{
-        width: 600%;
-    }
-
-    header li{display: none;}
-
-    .header-words{
-
-        width: 100%;
-        top: 50%;
-        left: 50%;
-    }
-}
+@media only screen and (max-width: 767px){}
 
 
 /* SMALL TABLETS: 768px to 1023px */
@@ -38,6 +23,7 @@
     blockquote{
         width: 100%;
         margin-left: 0px;
+        padding-right: 15%;
     }
 
     .skills{margin-left: 1%;}
@@ -62,5 +48,7 @@
     }
 
     header li{margin: 40px 20px;}
+
+    blockquote{margin-left: 50px;}
     
 }
