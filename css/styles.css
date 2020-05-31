@@ -226,12 +226,12 @@ header li a:active{
     margin: 0;
     padding: 0;
 }
-.comments-img img{width: 100%; }
+.comments-img img{width: 800px; }
 
 blockquote{
     width: 70%;
     text-align: left;
-    margin-left: 200px;
+    margin-left: 100px;
     margin-bottom: 40px;
 }
 
@@ -256,7 +256,6 @@ cite img{
 .col-skills{
     width: 80%;
     padding: 0 20px;
-    line-height: 2;
 }
 
 .skills{
