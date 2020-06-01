@@ -16,7 +16,7 @@ body{
     font-weight: 300px;
     font-size: 20px;
     text-rendering: optimizeLegibility;
-    overflow-x: hidden;
+    
 }
 
 .clearfix{zoom: 1;}
@@ -99,25 +99,28 @@ header ul{
     display: block;
 }
 
-header img{
+.logo,
+.logo-black{
     width: 200px;
     float: left;
     margin: -40px;
 }
 
-header li{
+.logo-black{display: none;}
+
+.nav-links{
     display: inline-block;
     margin: 40px 30px;
 }
 
-header li a:link,
-header li a:visited{
+.nav-links a:link,
+.nav-links a:visited{
     text-decoration: none;
     color: #fff;
 }
 
-header li a:hover,
-header li a:active{
+.nav-links a:hover,
+.nav-links a:active{
     color: #fff;
     border-bottom: 2px solid #eb3b5a;
     transition: 0.2s;
@@ -130,6 +133,45 @@ header li a:active{
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+/* ----------------------STICKY------------------------- */
+.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2px 2px rgb(230, 230, 230);
+    z-index: 9999;
+}
+
+
+.sticky .nav-links{
+    display: inline-block;
+    margin: 20px 35px;
+}
+
+.sticky .nav-links a:link,
+.sticky .nav-links a:visited{
+    color: #555;
+}
+
+.sticky .nav-links a:hover,
+.sticky .nav-links a:active{
+    color: #555;
+    padding-bottom: 18.5px;
+    border-bottom: 2px solid #eb3b5a;
+    transition: 0.2s;
+}
+
+.sticky .logo{display: none;}
+.sticky .logo-black{
+    display: block;
+    margin: -70px;
+}
+
+
+
 
 /* ---------------------BUTTONS------------------------- */
 .btn:link,
