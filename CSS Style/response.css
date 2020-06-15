@@ -1,137 +1,214 @@
-@media only screen and (max-width: 1200px){
-    nav img {margin-left: 0;}
-    
-    .navbar ul{margin-right: 0;}
+@media only screen and (max-width: 1200px) {
+  nav img {
+    margin-left: 0;
+  }
 
-    .skill-blue,
-    .skill-red{margin: 0 40px 80px 40px;}
+  .navbar ul {
+    margin-right: 0;
+  }
 
-    .experience-first-row:before{
-        top: -4%;
-        left: 213%
-    }
+  .skill-blue,
+  .skill-red {
+    margin: 0 40px 80px 40px;
+  }
 
-    .swep,
-    .chiomi{padding: 5px;}
+  .experience-first-row:before {
+    top: -4%;
+    left: 213%;
+  }
+
+  .swep,
+  .chiomi {
+    padding: 5px;
+  }
 }
 
-@media only screen and (max-width: 1163px){
-    #footer a{margin: 20px;}
+@media only screen and (max-width: 1163px) {
+  #footer a {
+    margin: 20px;
+  }
 
-    .header-information,
-    .header-button-full{left: 20%;}
+  .header-information,
+  .header-button-full {
+    left: 20%;
+  }
 
-    .profile-text{margin-top: 4%;}
-    
+  .profile-text {
+    margin-top: 4%;
+  }
 }
 
-@media only screen and (max-width: 1103px){
-    #footer li{
-        display: block;
-        margin: 20px;
-    }
+@media only screen and (max-width: 1103px) {
+  #footer li {
+    display: block;
+    margin: 20px;
+  }
 
-    #footer p{padding-top: 8%;}
+  #footer p {
+    padding-top: 8%;
+  }
 
-    #footer p,
-    #footer ul{margin: 0;}
+  #footer p,
+  #footer ul {
+    margin: 0;
+  }
 
-    .profile-text{margin-top: 5%;}
+  .profile-text {
+    margin-top: 5%;
+  }
 }
 
-@media only screen and (max-width: 991px){
+@media only screen and (max-width: 991px) {
+  html,
+  body {
+    font-size: 18px;
+  }
 
-    html,
-    body {font-size: 18px;}
+  .profile-text {
+    margin-top: 0;
+  }
 
-    .profile-text{margin-top: 0;}
+  .comments {
+    margin: 0 20%;
+  }
 
-    .comments{margin: 0 20%;}
+  #comments img {
+    height: 400px;
+  }
 
-    #comments img{height: 400px;}
+  .skill-blue,
+  .skill-red {
+    margin: 0 30px 60px 30px;
+  }
 
-    .skill-blue,
-    .skill-red{margin: 0 30px 60px 30px;}
+  .skill-red {
+    order: 1;
+  }
 
-    .skill-red{order: 1;}
+  .experience-img {
+    height: 100%;
+  }
 
-    .experience-img{height: 100%;}
+  #experience .container {
+    width: 50%;
+  }
 
-    #experience .container{width: 50%;}
+  #experience:before {
+    height: 80%;
+    width: 90%;
+    top: 20%;
+  }
 
-    #experience:before{
-        height: 80%;
-        width: 90%;
-        top: 20%;
-    }
+  .swep,
+  .chiomi,
+  .experience-work {
+    padding: 30px 50px;
+  }
 
-    .swep,
-    .chiomi,
-    .experience-work{padding: 30px 50px;}
+  .experience-work {
+    margin-top: 0;
+  }
 
-    .experience-work{margin-top: 0;}
+  .experience-first-row,
+  .experience-item,
+  .swep {
+    height: 100%;
+  }
 
-    .experience-first-row,
-    .experience-item,
-    .swep{height: 100%;}
+  .swep {
+    margin: 0 16px;
+  }
 
-    .swep{margin: 0 16px;}
+  #hire-me {
+    margin: 2% 22%;
+  }
 
-    #hire-me{margin: 2% 22%;}
+  #hire-me:before {
+    width: 120%;
+    left: -10%;
+  }
 
-    #hire-me:before{
-        width: 120%;
-        left: -10%;
-    }
-
-    .why-img{display: none;}
+  .why-img {
+    display: none;
+  }
 }
 
-@media only screen and (max-width: 875px){
-    #footer{padding: 10px 50px;}
+@media only screen and (max-width: 875px) {
+  #footer {
+    padding: 10px 50px;
+  }
 }
 
-@media only screen and (max-width: 767px){
-    html,
-    body {font-size: 16px;}
+@media only screen and (max-width: 767px) {
+  html,
+  body {
+    font-size: 16px;
+  }
 
-    .skill-blue,
-    .skill-red{margin: 0 10px 20px 30px;}
+  .skill-blue,
+  .skill-red {
+    margin: 0 10px 20px 30px;
+  }
 
-    .profile-picture{
-        width: 50%;
-        margin-left: 25%;
-    }
+  .profile-picture {
+    width: 50%;
+    margin-left: 25%;
+  }
 
-    .swep,
-    .chiomi,
-    .experience-work{padding: 10px 30px;}
+  .swep,
+  .chiomi,
+  .experience-work {
+    padding: 10px 30px;
+  }
 
-    #comments{display: none;}
+  #comments {
+    display: none;
+  }
 }
 
-@media only screen and (max-width: 580px){
-    #footer{padding: 1px;}
+@media only screen and (max-width: 580px) {
+  #footer {
+    padding: 1px;
+  }
 }
 
-@media only screen and (max-width: 576px){
+@media only screen and (max-width: 576px) {
+  .header-button-empty {
+    left: 200px;
+  }
 
-    .header-button-empty{left: 200px;}
+  .container {
+    width: 70%;
+  }
 
-    .container{width: 70%;}
-
-    #experience .container{width: 70%;}
+  #experience .container {
+    width: 70%;
+  }
 }
 
-@media only screen and (max-width: 480px){
-    .education{margin-right: 0;}
+@media only screen and (max-width: 480px) {
+  .header-information {
+    top: 20%;
+  }
 
-    .education p{text-align: right;}
-    .container{width: 80%;}
+  .education {
+    margin-right: 0;
+  }
 
-    .swep,
-    .chiomi,
-    .experience-work{padding: 5px 10px;}
+  .education p {
+    text-align: right;
+  }
+  .container {
+    width: 80%;
+  }
 
-    #footer{display: block;}
+  .swep,
+  .chiomi,
+  .experience-work {
+    padding: 5px 10px;
+  }
+
+  #footer {
+    display: block;
+  }
 }
