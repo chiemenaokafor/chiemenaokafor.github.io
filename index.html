@@ -6,7 +6,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- FONT AWESOME -->
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="Images/favicon.png" type="image/x-icon">
+
+    <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/957a17af15.js" crossorigin="anonymous"></script>
 
     <!-- Google Fonts -->
@@ -20,6 +23,9 @@
 
     <!-- Response CSS -->
     <link rel="stylesheet" href="CSS Style/response.css">
+
+    <!-- Animation CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 
   </head>
   <body>
@@ -66,11 +72,11 @@
     <section id="profile">
       <div class="container">
         <h2>My Profile</h2>
-        <div class="row">
+        <div class="row" data-aos="fade-right">
           <div class="col-lg-4 col-md-4">
             <img class="profile-picture" src="Images/20191208_100347.jpg" alt="my picture">
           </div>
-          <div class="col-lg-8 col-md-8 profile-text">
+          <div class="col-lg-8 col-md-8 profile-text" data-aos="fade-left">
             <p>I am a hard-working achiever, dedicated to on-time delivery, and enthusiastic team player</p>
             <p>I have always had a keen interest in IT and pay great attention to detail in the work that I do.</p>
             <p>My aim is to utilize my skills and abilities to add value to your organization and reaching my full potential professionally and personally.</p>
@@ -84,33 +90,33 @@
       <div class="container">
         <h2>Skills</h2>
         <div class="row">
-          <div class="col-lg-3 col-md-5 col-sm-5 skill-blue">
+          <div class="col-lg-3 col-md-5 col-sm-5 skill-blue" data-aos="zoom-in-right">
             <h3>Web Development</h3>
-              <li>I understand the usuage of <strong>HTML, CSS and JAVASCRIPT.</strong></li>
+              <li>I understand the usuage of <strong>HTML, CSS, SCSS and JAVASCRIPT.</strong></li>
               <li>I understand and know how to use wordpress.</li>
               <li>This website was developed using the above mentioned.</li>
             <a class="btn-skills" href="#" role="button">Projects</a>
           </div>
-          <div class="col-lg-3 col-md-5 col-sm-5 skill-blue">
+          <div class="col-lg-3 col-md-5 col-sm-5 skill-blue" data-aos="zoom-in-down" data-aos-delay="300">
             <h3>UI/UX Design</h3>
               <li>Able to use wireframes tools and also build the high definition version.</li>
               <li>Use of Adobe XD and mockuuups studio.</li>
               <li>&nbsp;</li>
             <a class="btn-skills" href="#" role="button">Designs</a>
           </div>
-          <div class="col-lg-3 col-md-5 col-sm-5 skill-red">
+          <div class="col-lg-3 col-md-5 col-sm-5 skill-red" data-aos="zoom-in-left" data-aos-delay="600">
             <h3>Networking</h3>
               <li>I understand the concept and working principle of networking.</li>
               <li>I am able to work with fiber optics cables.</li>
           </div>
-          <div class="col-lg-3 col-md-5 col-sm-5 skill-blue">
+          <div class="col-lg-3 col-md-5 col-sm-5 skill-blue" data-aos="zoom-in-right">
             <h3>Digital Marketing</h3>
               <li>Being a certified dogital marketer from google, I can confirm that I know what it takes to sell a produck or advertise them.</li>
               <li>&nbsp;</li>
               <li>&nbsp;</li>
             <a class="btn-skills" href="#" role="button">Certificate</a>
           </div>
-          <div class="col-lg-3 col-md-5 col-sm-5 skill-blue">
+          <div class="col-lg-3 col-md-5 col-sm-5 skill-blue" data-aos="zoom-in-up" data-aos-delay="300">
             <h3>Photoshop</h3>
               <li>I am able to edit and design projects using photoshop.</li>
               <li>I hav improved my skills in this with lockdown period</li>
@@ -118,7 +124,7 @@
               <li>&nbsp;</li>
             <a class="btn-skills" href="#" role="button">Simple Projects</a>
           </div>
-          <div class="col-lg-3 col-md-5 col-sm-5 skill-red">
+          <div class="col-lg-3 col-md-5 col-sm-5 skill-red" data-aos="zoom-in-left" data-aos-delay="600">
             <h3>Other Skills</h3>
               <li>Basic electrical and electronic connections.</li>
               <li>AutoCAD, Multisim, Matlab.</li>
@@ -135,11 +141,11 @@
       <div class="container">
         <div class="row ">
           <div class="col-lg-4 experience-first-row">
-            <img class="experience-img" src="Images/20200424_1904361.png" alt="my picture">
+            <img class="experience-img" src="Images/20200424_1904361.png" alt="my picture" data-aos="flip-left">
             <p class="experience-work">A list of places I have worked and date. Gained little experience and ready to take on a bigger challenge.</p>
           </div>
           <div class="col-lg-4 experience-item">
-              <div class="chiomi">
+              <div class="chiomi" data-aos="zoom-in-down">
                 <h3>Chiomi Investment Limited</h3>
                 <h4>Intern</h4>
                 <ul>
@@ -149,7 +155,7 @@
                 </ul>
                 <footer>AUGUST 2019 - OCTOBER 2019</footer>
               </div>
-              <div class="chiomi">
+              <div class="chiomi" data-aos="zoom-in-up">
                 <h3>Oga Discount</h3>
                 <h4>Front-End Developer</h4>
                 <ul>
@@ -159,7 +165,7 @@
                 <footer>JUNE 2019 - JULY 2019</footer>
               </div>
           </div>
-          <div class="col-lg-3 swep">
+          <div class="col-lg-3 swep" data-aos="zoom-in-left">
             <h3>Student Work Experience Program</h3>
             <h4>&nbsp;</h4>
             <ul>
@@ -181,13 +187,13 @@
     <section id="hire-me">
       <div class="row">
         <div class="col-lg-2"></div>
-        <div class="col-lg-6 why-text">
+        <div class="col-lg-6 why-text"  data-aos="fade-down-right">
           <h3>Why you should hire me.</h3>
           <p>I can do the work and deliver exceptional results.</p>
           <p>I will fit in beautifully and be a great addition to the team.</p>
           <p>And finally I have developed communication skills from my previous working experience, which means I can work across department and start contributing from day one.</p>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-4"  data-aos="flip-right" data-aos-delay="5000">
           <img class="why-img" src="Images/20200424_19043613.png" alt="my picture">
         </div>
       </div>
@@ -196,7 +202,9 @@
     <!-- Education -->
     <section id="education">
       <h2>Education</h2>
-      <div class="education">
+      <div class="education" data-aos="flip-left"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="2000">
         <h4>Covenant University</h4>
         <p>400 level, Department of Electrical and Information Engineering.</p>
       </div>
@@ -205,7 +213,7 @@
     <!-- Comments -->
     <section id="comments">
       <h2>Comments</h2>
-      <div class="comments">
+      <div class="comments" data-aos="zoom-out-up">
         <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
           <ol class="carousel-indicators">
             <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -221,14 +229,14 @@
               </div>
             </div>
             <div class="carousel-item">
-              <img src="Images/Screenshot (196).png" class="d-block w-100" alt="...">
+              <img src="Images/Screenshot (197).png" class="d-block w-100" alt="...">
               <div class="carousel-caption d-none d-md-block">
                 <h5>Nnorom Ebuka</h5>
                 <p>Derick is a hard working person who is always ready to learn. He is friendly and always open to ideas.</p>
               </div>
             </div>
             <div class="carousel-item">
-              <img src="Images/Screenshot (197).png" class="d-block w-100" alt="...">
+              <img src="Images/Screenshot (196).png" class="d-block w-100" alt="...">
               <div class="carousel-caption d-none d-md-block">
                 <h5>Usman Tori</h5>
                 <p>Good people don't come ver often. So take them when you see them ad always keep them.</p>
@@ -263,5 +271,14 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 150,
+        duration: 1000
+      });
+    </script>
   </body>
 </html>
+
+
