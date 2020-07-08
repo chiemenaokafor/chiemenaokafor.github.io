@@ -241,8 +241,6 @@ main {
   }
 
   &:not(:last-child) {
-    margin-bottom: $gutter-vertical;
-
     @include respond(land-tab) {
       margin-bottom: $gutter-vertical-small;
     }
