@@ -19,6 +19,7 @@ $defaultFont: 2rem;
 // GRID
 $grid-width: 114rem;
 $gutter-vertical: 8rem;
+$gutter-vertical-small: 6rem;
 $gutter-horizontal: 6rem;
 
 // ANIMATION
@@ -44,16 +45,16 @@ ORDER: BASE , TYPOGRAPHY, GENERAL LAYOUT, GRID PAGE LAYOUT.
 1em equal 16px
 */
 @mixin respond($breakpoint) {
-  // 320px
-  @if $breakpoint==ipod {
-    @media (max-width: 20em) {
+  // 425px
+  @if $breakpoint==phone {
+    @media (max-width: 26.5625em) {
       @content;
     }
   }
 
-  // 425px
-  @if $breakpoint==phone {
-    @media (max-width: 26.5625em) {
+  // 520px
+  @if $breakpoint==x-phone {
+    @media (max-width: 32.5em) {
       @content;
     }
   }
@@ -80,14 +81,21 @@ ORDER: BASE , TYPOGRAPHY, GENERAL LAYOUT, GRID PAGE LAYOUT.
   }
 
   // 1200px
-  @if $breakpoint==small-laptop {
-    @media (max-width: 75em) {
+  @if $breakpoint==normal-laptop {
+    @media (min-width: 75em) {
+      @content;
+    }
+  }
+
+  // 1440px
+  @if $breakpoint==laptop {
+    @media (max-width: 90em) {
       @content;
     }
   }
 
   // 1650px
-  @if $breakpoint==normal-laptop {
+  @if $breakpoint==big-laptop {
     @media (min-width: 103.125em) {
       @content;
     }
@@ -120,32 +128,20 @@ ORDER: BASE , TYPOGRAPHY, GENERAL LAYOUT, GRID PAGE LAYOUT.
 html {
   font-size: 62.5%; //1rem =10px and 16px = 62.5%
 
-  @include respond(small-laptop) {
-    font-size: 62.5%;
+  @include respond(laptop) {
+    font-size: 56.25%;
   }
-  
+
   @include respond(land-tab) {
-    font-size: 56.25%;
-  }
-
-  @include respond(port-tab) {
-    font-size: 56.25%;
-  }
-
-  @include respond(land-phone) {
-    font-size: 56.25%;
+    font-size: 62.5%;
   }
 
   @include respond(phone) {
-    font-size: 56.25%;
-  }
-
-  @include respond(ipod) {
-    font-size: 56.25%;
+    font-size: 60%;
   }
 
   @include respond(normal-laptop) {
-    font-size: 70%;
+    font-size: 65%;
   }
 
   @include respond(large-laptop) {
@@ -166,7 +162,7 @@ body {
   color: $fontColor;
   padding: 3rem;
 
-  @include respond(small-laptop) {
+  @include respond(land-phone) {
     padding: 0;
   }
 }
@@ -238,6 +234,18 @@ main {
   max-width: $grid-width;
   margin: 0 auto;
 
+  @include respond(land-tab) {
+    max-width: 50rem;
+    padding: 0 3rem;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: $gutter-vertical;
+
+    @include respond(land-tab) {
+      margin-bottom: $gutter-vertical-small;
+    }
+  }
   @include clearfix;
 
   [class^="col-"] {
@@ -245,6 +253,15 @@ main {
 
     &:not(:last-child) {
       margin-right: $gutter-horizontal;
+
+      @include respond(land-tab) {
+        margin-right: 0;
+        margin-bottom: $gutter-vertical-small;
+      }
+    }
+
+    @include respond(land-tab) {
+      width: 100% !important;
     }
   }
 
@@ -254,22 +271,6 @@ main {
 
   .col-1-of-3 {
     width: calc((100% - 2 * #{$gutter-horizontal}) / 3);
-  }
-
-  .col-1-of-4 {
-    width: calc((100% - 3 * #{$gutter-horizontal}) / 4);
-  }
-
-  .col-2-of-3 {
-    width: calc(2 * ((100% - 2 * #{$gutter-horizontal}) / 3) + #{$gutter-horizontal});
-  }
-
-  .col-2-of-4 {
-    width: calc(2 * ((100% - 3 * #{$gutter-horizontal}) / 4) + #{$gutter-horizontal});
-  }
-
-  .col-3-of-4 {
-    width: calc(3 * ((100% - 3 * #{$gutter-horizontal}) / 4) + (2 * #{$gutter-horizontal}));
   }
 }
 
@@ -286,11 +287,18 @@ nav {
   justify-content: space-between;
   align-items: center;
 
-
+  @include respond(x-phone) {
+    display: block;
+    text-align: center;
+  }
   nav-brand {
     color: $colorPrimary;
     font-family: "Yellowtail", cursive;
     font-size: 5rem;
+
+    @include respond(land-phone) {
+      font-size: 3rem;
+    }
   }
 }
 
@@ -311,6 +319,19 @@ nav {
     box-shadow: 0 1rem 3rem rgba($colorBlack, .1);
     text-align: center;
     cursor: pointer;
+    @include respond(laptop) {
+      height: 5rem;
+      width: 5rem;
+      right: 7rem;
+    }
+
+    @include respond(land-phone) {
+      top: 2rem;
+    }
+
+    @include respond(x-phone) {
+      right: 4rem;
+    }
   }
 
   &__background {
@@ -323,11 +344,24 @@ nav {
     background-image: radial-gradient($colorPrimary, $colorTertiary);
     z-index: 1000;
     transition: transform .8s cubic-bezier(0.83, 0, 0.17, 1);
-    // transform: scale(80);
+    
+    @include respond(laptop) {
+      height: 4rem;
+      width: 4rem;
+      right: 7.5rem;
+    }
+
+    @include respond(land-phone) {
+      top: 2.5rem;
+    }
+
+    @include respond(x-phone) {
+      right: 4.5rem;
+    }
   }
 
   &__nav {
-    height: 100vh;
+    height: 0;
     width: 0;
     position: fixed;
     top: 0;
@@ -384,11 +418,15 @@ nav {
   &__checkbox:checked~&__nav {
     opacity: 1;
     width: 100%;
+    height: 100vh;
   }
 
   &__icon {
     position: relative;
     margin-top: 3.5rem;
+    @include respond(laptop) {
+      top: -1rem;
+    }
 
     &,
     &::before,
@@ -450,25 +488,57 @@ nav {
   font-size: $defaultFont;
   letter-spacing: 0.2rem;
 
+  @include respond(laptop) {
+    grid-template-columns: 5% 1fr 1fr 5%;
+    align-items: center;
+  }
+
+  @include respond(land-tab) {
+    grid-template-columns: 5% 1fr 5%;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+  }
+
+
   &__photo {
-    height: 60rem;
+    height: 50rem;
     justify-self: center;
+    align-self: center;
     display: flex;
     overflow: hidden;
     margin: auto;
 
+    @include respond(laptop) {
+      grid-column: 2/3;
+      height: 40rem;
+    }
+
+    @include respond(land-tab) {
+      grid-row: 2/3;
+      grid-column: 2/3;
+      height: auto;
+    }
+
+
     img {
-      transition: all 0.3s ease-in;
+      transition: all 0.3s ease-out;
+      height: 50rem;
+
+      @include respond(laptop) {
+        height: 40rem;
+      }
+
+      @include respond(land-tab) {
+        height: 30rem;
+      }
     }
 
     &-left {
       transform: translateY(-10%);
-      height: 100%;
     }
 
     &-right {
       transform: translateY(10%);
-      height: 100%;
     }
 
     &:hover .header__photo-left {
@@ -484,12 +554,27 @@ nav {
     grid-column: 2/3;
     align-self: end;
 
+    @include respond(laptop) {
+      grid-column: 3/4;
+      grid-row: 1/2;
+      align-self: start;
+      transform: translateY(5rem);
+    }
+
+    @include respond(land-tab) {
+      grid-row: 1/2;
+      grid-column: 2/3;
+      text-align: center;
+      transform: translateY(0);
+    }
+
     p:first-of-type {
-      margin: 1rem 0;
+      margin: 1rem 0 4rem 0;
     }
 
     p:last-of-type {
       margin-bottom: 2rem;
+      font-size: 1.6rem;
     }
   }
 
@@ -497,8 +582,37 @@ nav {
     align-self: center;
     margin: 0 auto;
 
-    p:first-of-type {
+    @include respond(laptop) {
+      grid-column: 3/4;
+      grid-row: 1/2;
+      transform: translateY(10rem);
+    }
+
+    @include respond(land-tab) {
+      grid-row: 4/5;
+      grid-column: 2/3;
+      text-align: center;
+      transform: translateY(0);
+    }
+
+
+
+    p {
+      font-size: 1.6rem;
       margin-bottom: 2rem;
+      @include respond(land-tab) {
+        padding: 10rem;
+      }
+
+      @include respond(phone) {
+        display: none;
+      }
+    }
+
+    p:first-of-type {
+      @include respond(land-tab) {
+        display: none;
+      }
     }
   }
 }
@@ -516,6 +630,10 @@ nav {
     transition: all 0.3s;
     filter: brightness(0.97);
     backface-visibility: hidden;
+
+    @include respond(land-tab) {
+      margin: 5rem auto 2rem auto;
+    }
 
     &-icon {
       padding: 0;
@@ -559,14 +677,25 @@ nav {
   &__text {
     max-width: 70rem;
     margin: 4rem auto;
+    @include respond(land-phone) {
+      padding: 3rem;
+    }
   }
 
   img {
     max-width: 20rem;
-    border-radius: 50rem;
+    border-radius: 50%;
     position: absolute;
     animation: dot 2s ease-in-out infinite alternate;
     transform: scale(1);
+
+    @include respond(land-tab) {
+      max-width: 10rem;
+    }
+
+    @include respond(land-phone) {
+      display: none;
+    }
 
     &:hover {
       animation: none;
