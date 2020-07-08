@@ -45,6 +45,7 @@ ORDER: BASE , TYPOGRAPHY, GENERAL LAYOUT, GRID PAGE LAYOUT.
 1em equal 16px
 */
 @mixin respond($breakpoint) {
+
   // 425px
   @if $breakpoint==phone {
     @media (max-width: 26.5625em) {
@@ -246,6 +247,7 @@ main {
       margin-bottom: $gutter-vertical-small;
     }
   }
+
   @include clearfix;
 
   [class^="col-"] {
@@ -291,6 +293,7 @@ nav {
     display: block;
     text-align: center;
   }
+
   nav-brand {
     color: $colorPrimary;
     font-family: "Yellowtail", cursive;
@@ -319,6 +322,7 @@ nav {
     box-shadow: 0 1rem 3rem rgba($colorBlack, .1);
     text-align: center;
     cursor: pointer;
+
     @include respond(laptop) {
       height: 5rem;
       width: 5rem;
@@ -344,7 +348,7 @@ nav {
     background-image: radial-gradient($colorPrimary, $colorTertiary);
     z-index: 1000;
     transition: transform .8s cubic-bezier(0.83, 0, 0.17, 1);
-    
+
     @include respond(laptop) {
       height: 4rem;
       width: 4rem;
@@ -424,6 +428,7 @@ nav {
   &__icon {
     position: relative;
     margin-top: 3.5rem;
+
     @include respond(laptop) {
       top: -1rem;
     }
@@ -600,6 +605,7 @@ nav {
     p {
       font-size: 1.6rem;
       margin-bottom: 2rem;
+
       @include respond(land-tab) {
         padding: 10rem;
       }
@@ -677,6 +683,7 @@ nav {
   &__text {
     max-width: 70rem;
     margin: 4rem auto;
+
     @include respond(land-phone) {
       padding: 3rem;
     }

@@ -16,6 +16,9 @@
   <link rel="stylesheet" href="CSS/icon-fonts.css">
   <!-- GOOGLE FONTS -->
   <link href="https://fonts.googleapis.com/css2?family=Yellowtail&family=Fira+Sans:wght@300;400&family=Work+Sans:wght@300;400&display=swap" rel="stylesheet">
+  <!-- Animation CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
 </head>
 
 <body>
@@ -65,7 +68,7 @@
     <section class="skills">
       <h2>My Skills</h2>
       <div class="row">
-        <div class="col-1-of-3">
+        <div class="col-1-of-3" data-aos="fade-right">
           <div class="skills__card">
             <i class="skills__card-icon icon-basic-webpage"></i>
             <h3>Web Development</h3>
@@ -76,7 +79,7 @@
             </div>
           </div>
         </div>
-        <div class="col-1-of-3">
+        <div class="col-1-of-3" data-aos="fade-down" data-aos-delay="300">
           <div class="skills__card">
             <i class="skills__card-icon icon-basic-smartphone"></i>
             <h3>UI/UX Design</h3>
@@ -87,7 +90,7 @@
             </div>
           </div>
         </div>
-        <div class="col-1-of-3">
+        <div class="col-1-of-3" data-aos="fade-left" data-aos-delay="600">
           <div class="skills__card">
             <i class="skills__card-icon icon-basic-world"></i>
             <h3>Networking</h3>
@@ -99,7 +102,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-1-of-3">
+        <div class="col-1-of-3" data-aos="fade-right">
           <div class="skills__card">
             <i class="skills__card-icon icon-basic-message-txt"></i>
             <h3>Digital Marketing</h3>
@@ -109,7 +112,7 @@
             </div>
           </div>
         </div>
-        <div class="col-1-of-3">
+        <div class="col-1-of-3" data-aos="fade-up" data-aos-delay="600">
           <div class="skills__card">
             <i class="skills__card-icon icon-basic-info"></i>
             <h3>Other Skills</h3>
@@ -128,7 +131,7 @@
       <h2>
         Why you should hire me
       </h2>
-      <div class="why__text">
+      <div class="why__text" data-aos="zoom-in-right">
         <p>I can do the work and deliver exceptional results.</p>
         <p>I will fit in beautifully and be a great addition to the team.</p>
         <p>And finally I have developed communication skills from my previous working experience, which means I can work across department and start contributing from day one.</p>
@@ -140,20 +143,20 @@
       <h2>Some of my Designs</h2>
       <div class="row">
         <h3>A furniture website</h3>
-        <div class="col-1-of-2">
+        <div class="col-1-of-2" data-aos="fade-down-right">
           <a target="_blank" href="https://drive.google.com/file/d/1VgX30-yLHn0E24sye0OQAx3goHHVEPwT/view"><img src="IMAGES/Designs/Furniture.jpg" alt=""></a>
           
         </div>
-        <div class="col-1-of-2">
+        <div class="col-1-of-2" data-aos="fade-down-left" data-aos-delay="300">
           
           <a target="_blank" href="https://drive.google.com/file/d/1lxk_Ns8Q6oX-krqcoIqG_-S-GaYdclqE/view"><img src="IMAGES/Designs/Category.jpg" alt=""></a>
         </div>
       </div>
       <div class="row">
-        <div class="col-1-of-2">
+        <div class="col-1-of-2" data-aos="fade-up-right">
           <a target="_blank" href="https://drive.google.com/file/d/1TGOUOU2zUfeFfM6QKvK7A3sVvUrLL6EO/view"><img src="IMAGES/Designs/Shop.jpg" alt=""></a>
         </div>
-        <div class="col-1-of-2">
+        <div class="col-1-of-2" data-aos="fade-up-left" data-aos-delay="300">
           <a target="_blank" href="https://drive.google.com/file/d/1gM-q6xaoSUMhVuXIEvUkxuTH0MAl_-kG/view"><img src="IMAGES/Designs/ContactUs.jpg" alt=""></a>
         </div>
       </div>
@@ -162,7 +165,7 @@
     <section class="experience">
       <h2>Experience</h2>
       <div class="row">
-        <div class="col-1-of-3">
+        <div class="col-1-of-3" data-aos="flip-left">
           <div class="experience__card">
             <div class="experience__card-face face1">
               <div class="experience__card-content">
@@ -179,7 +182,7 @@
             </div>
           </div>
         </div>
-        <div class="col-1-of-3">
+        <div class="col-1-of-3" data-aos="flip-down"  data-aos-delay="300">
           <div class="experience__card">
             <div class="experience__card-face face1">
               <div class="experience__card-content">
@@ -194,7 +197,7 @@
             </div>
           </div>
         </div>
-        <div class="col-1-of-3">
+        <div class="col-1-of-3" data-aos="flip-right" data-aos-delay="600">
           <div class="experience__card">
             <div class="experience__card-face face1">
               <div class="experience__card-content">
@@ -224,6 +227,14 @@
       </nav>
     </footer>
   </main>
+  <!-- JAVASCRIPT -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 150,
+        duration: 1000
+      });
+    </script>
 </body>
 
 </html>
